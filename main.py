@@ -45,11 +45,11 @@ logger = setup_logging()
 
 def get_db():
     return mysql.connector.connect(
-        host="localhost",
+        host="127.0.0.1",
         port=3306,
         user="root",
-        password="1234",
-        database="test_db"
+        password="password",
+        database="llmagent"
     )
 
 import time
